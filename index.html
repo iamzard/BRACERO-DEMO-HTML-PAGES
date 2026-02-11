@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Richard Bracero | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            color:white;
+        }
+
+        header{
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        header h1{
+            font-size:45px;
+            background: linear-gradient(90deg,#00f5ff,#ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p{
+            margin-top:15px;
+            font-size:18px;
+            opacity:0.8;
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            padding:20px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#00f5ff;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ff00ff;
+        }
+
+        section{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.05);
+            border:1px solid rgba(255,255,255,0.2);
+            border-radius:20px;
+            padding:30px;
+            margin:20px auto;
+            width:80%;
+            backdrop-filter: blur(10px);
+            box-shadow:0 0 20px #00f5ff;
+        }
+
+        .projects{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+        }
+
+        .project-box{
+            width:250px;
+            padding:20px;
+            border-radius:20px;
+            background: rgba(0,0,0,0.6);
+            box-shadow:0 0 15px #ff00ff;
+            transition:0.3s;
+        }
+
+        .project-box:hover{
+            transform:scale(1.05);
+            box-shadow:0 0 25px #00f5ff;
+        }
+
+        button{
+            width:100px;
+            height:20px;
+            font-size:12px;
+            border:none;
+            border-radius:20px;
+            background:linear-gradient(90deg,#00f5ff,#ff00ff);
+            color:white;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            opacity:0.8;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            opacity:0.7;
+        }
+
+        @media(max-width:768px){
+            .projects{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .card{
+                width:95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Richard Bracero</h1>
+    <p>BSIT Graduate | Web Developer | System Integration Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Richard Bracero, a passionate developer focused on 
+            building modern systems, futuristic UI designs, and interactive 
+            web applications. I love turning ideas into real digital solutions.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project-box">
+            <h3>Student Management System</h3>
+            <p>CRUD system with auto-generated QR codes.</p>
+            <button>View</button>
+        </div>
+
+        <div class="project-box">
+            <h3>Voucher WiFi Hotspot</h3>
+            <p>Network hotspot system for student projects.</p>
+            <button>View</button>
+        </div>
+
+        <div class="project-box">
+            <h3>Flutter Firebase App</h3>
+            <p>Mobile guestbook app integrated with Firestore.</p>
+            <button>View</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Me</h2>
+        <p>Email: your@email.com</p>
+        <p>Location: Philippines</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Richard Bracero | All Rights Reserved
+</footer>
+
+</body>
+</html>
